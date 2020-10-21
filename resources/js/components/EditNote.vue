@@ -58,8 +58,8 @@
             saveForm() {
                 event.preventDefault();
                 var app = this;
-                var newCompany = app.note;
-                axios.patch('/api/v1/companies/' + app.noteId, newNote)
+                var newNote = app.note;
+                axios.patch('/api/v1/notes/' + app.noteId, newNote)
                     .then(function (resp) {
                         app.$router.replace('/');
                     })

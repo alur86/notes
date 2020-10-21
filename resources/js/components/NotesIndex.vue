@@ -5,7 +5,7 @@
         </div>
  
         <div class="panel panel-default">
-            <div class="panel-heading">Companies list</div>
+            <div class="panel-heading">Notes</div>
             <div class="panel-body">
                 <table class="table table-bordered table-striped">
                     <thead>
@@ -18,7 +18,7 @@
                     <tbody>
                     <tr v-for="note, index in notes">
                         <td>{{ note.title }}</td>
-                        <td>{{ company.body }}</td>
+                        <td>{{ note.body }}</td>
                         <td>
                             <router-link :to="{name: 'editNote', params: {id: note.id}}" class="btn btn-xs btn-default">
                                 Edit
